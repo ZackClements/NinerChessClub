@@ -1,0 +1,7 @@
+#leaderboardImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Width of image in terms of screen % */
+    margin-top: 1%;
+}

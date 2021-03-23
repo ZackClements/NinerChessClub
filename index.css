@@ -1,0 +1,44 @@
+.wrapper {
+    min-height: 100%; /* wrapper height */
+    padding: 15px; /* Padding for all elements within the wrapper */
+}
+
+#indexText {
+    background-color: antiquewhite;
+    border: 5px solid #c1af6c; /* Gold border */
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left; /* Aligns element as left as possible */
+    width: 62%; /* Width of the element */
+}
+
+#indexText h2 {
+    text-align: center;
+}
+
+#indexPuzzle {
+    float: left; /* Aligns element as left as possible */
+    padding: 1%;
+}
+
+#indexPuzzle p {
+    border: 2px solid #c1af6c; /* Gold border */
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#indexBody {
+    padding: 0 15px;
+}
+
+#indexDiscord {
+    float: left; /* Aligns element as left as possible */
+    padding: 1%;
+}
+
+
+
+

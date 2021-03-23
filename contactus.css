@@ -1,0 +1,15 @@
+#formBody {
+    text-align: center;
+    background-color: antiquewhite;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    border: 5px solid #c1af6c;
+    padding: 10px
+}
+
+#submit {
+    background-color: #104c31;
+    font-family: 'BebasNeue',Arial, sans-serif; /* Sets the submit button font family to "BebasNeue" */
+    color: white; /* text color */
+}

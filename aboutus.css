@@ -1,0 +1,26 @@
+
+#aboutBody {
+    width: inherit;
+    border: 5px solid #c1af6c;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#aboutImages {
+    display: inline-table;
+    text-align: center;
+    width: 100%;
+}
+
+#aboutText {
+    width: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#aboutText p {
+    text-align: left;
+}

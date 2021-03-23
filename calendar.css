@@ -1,0 +1,33 @@
+table {
+    width: 75%; /* Width of the table in terms of screen % */
+    background-color: antiquewhite;
+    overflow: visible;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    table-layout: fixed;
+    border: 5px solid #c1af6c; /* Gold border around the table */
+    padding: 10px;
+}
+
+
+th {
+    margin: 0;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black; /* Black border around each non header cell */
+    height: 5%; /* Height of each non header cell */
+    margin: 0;
+}
+
+/* Formatting for the empty cells */
+.empty {
+    border: none;
+}
+
+a {
+    text-decoration: none; /* Removes the underlined from the hyperlink */
+}

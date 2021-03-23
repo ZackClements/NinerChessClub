@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="baseTemplate.css">
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    <script src="contactScript.js"></script>
+    <style type="text/css">
+        #contact {
+        }
+    </style>
+</head>
+<body>
+<header>
+        <nav>
+            <img id="clubname" src="images/NinerChessClubTrans.png" alt="Logo" width="120" height="120">
+            <div id="button">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About</a>
+                <a href="stats.html">Statistics</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="contactus.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+    <main>
+        <div class="pageHeader">
+            <h1>Fill out the form below!</h1>
+        </div>
+        <div id="formBody">
+            <form action="contactus.html" method="post" id="contact">
+                <label for="fullname">Name</label> <br>
+                <input type="text" id="fullname" name="Full Name" required> <br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email" required> <br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+<footer>
+    <div id="footerValidation">
+        <a href="https://validator.w3.org/">HTML validation</a> |
+        <a href="https://jigsaw.w3.org/css-validator/">CSS validation</a>
+    </div>
+    <div id="findUs">
+        <h4>Find us online below </h4>
+        <a href="https://ninerengage.uncc.edu/organization/ninerchess">Niner Engage</a> |
+        <a href="https://lichess.org/team/niner-chess-club">Lichess</a> <br>
+        <a href="https://www.chess.com/club/niner-chess-club">Chess.com</a> |
+        <a href="https://discord.gg/GAXPCuQ">Discord</a>
+    </div>
+</footer>
+</body>
+</html>
