@@ -1,9 +1,15 @@
 //Function that automatically runs on window load
 window.onload = function(){
-    document.getElementById('contact').addEventListener('submit', send_alert);
+    $('#contact').submit(function(e) {
+        e.preventDefault();
+        // Jquery form plugin found here: https://plugins.jquery.com/form/
+        $(this).ajaxSubmit({ //Uses jQuery Form Plugin to submit ajax request
+            clearForm: true,
+            success: function() {
+                window.alert('Will be in touch shortly!');
+            }
+        });
+    });
 }
 
-//Function that sends an alert message when the form is submitted
-function send_alert(){
-    alert("Thank you for reaching out! Will be in touch soon")
-}
+

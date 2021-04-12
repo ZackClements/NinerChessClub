@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="baseTemplate.css">
-    <link rel="stylesheet" type="text/css" href="contactus.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="baseTemplate.css"/>
+    <link rel="stylesheet" type="text/css" href="contactus.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="https://malsup.github.io/jquery.form.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="contactScript.js"></script>
-    <style type="text/css">
-        #contact {
-        }
-    </style>
 </head>
 <body>
 <header>
         <nav>
-            <img id="clubname" src="images/NinerChessClubTrans.png" alt="Logo" width="120" height="120">
+            <img id="clubname" src="images/NinerChessClubTrans.png" alt="Logo" width="120" height="120"/>
             <div id="button">
                 <a href="index.html">Home</a>
                 <a href="aboutus.html">About</a>
@@ -23,21 +23,24 @@
                 <a href="contactus.html">Contact</a>
             </div>
         </nav>
-    </div>
 </header>
-    <main>
+<main>
         <div class="pageHeader">
-            <h1>Fill out the form below!</h1>
+            <h1 id="submitResponse">Fill out the form below!</h1>
         </div>
         <div id="formBody">
             <form action="contactus.html" method="post" id="contact">
-                <label for="fullname">Name</label> <br>
-                <input type="text" id="fullname" name="Full Name" required> <br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="Email" required> <br>
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Submit" id="submit">
+                <p>
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="Full Name" required="required" title="First and last name!" />
+                </p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required="required" />
+                <label for="reason">Reason</label>
+                <input type="text" id="reason" name="Reason" required="required"/>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required="required"></textarea>
+                <input type="submit" value="Submit" id="submit"/>
             </form>
         </div>
     </main>
@@ -49,7 +52,7 @@
     <div id="findUs">
         <h4>Find us online below </h4>
         <a href="https://ninerengage.uncc.edu/organization/ninerchess">Niner Engage</a> |
-        <a href="https://lichess.org/team/niner-chess-club">Lichess</a> <br>
+        <a href="https://lichess.org/team/niner-chess-club">Lichess</a> <br />
         <a href="https://www.chess.com/club/niner-chess-club">Chess.com</a> |
         <a href="https://discord.gg/GAXPCuQ">Discord</a>
     </div>

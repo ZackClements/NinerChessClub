@@ -1,15 +1,31 @@
 #formBody {
     text-align: center;
+    display: flex;
     background-color: antiquewhite;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 1%;
     border: 5px solid #c1af6c;
-    padding: 10px
+    padding: 10px;
 }
-
+/* Styling for the input boxes */
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* Gives input boxes rounded corners */
+    border-radius: 4px;
+    box-sizing: border-box
+}
+label{
+    display: inline-block;
+    width: 5em;
+}
 #submit {
     background-color: #104c31;
-    font-family: 'BebasNeue',Arial, sans-serif; /* Sets the submit button font family to "BebasNeue" */
-    color: white; /* text color */
+    /* Sets the submit button font family to "BebasNeue" */
+    font-family: 'BebasNeue',Arial, sans-serif;
+    color: white;
 }

@@ -1,33 +1,217 @@
-table {
-    width: 75%; /* Width of the table in terms of screen % */
-    background-color: antiquewhite;
-    overflow: visible;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    table-layout: fixed;
-    border: 5px solid #c1af6c; /* Gold border around the table */
-    padding: 10px;
+.container {
+  background: antiquewhite;
+  width: 50%;
+  padding: 10px;
+  margin: 1% auto 0;
+  border: 5pt solid #c1af6c;
 }
 
-
-th {
-    margin: 0;
-    text-align: center;
+p {
+  text-align: center;
+  margin: 3em auto 1em auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top: 2px solid #414141;
 }
 
-td {
-    border: 1px solid black; /* Black border around each non header cell */
-    height: 5%; /* Height of each non header cell */
-    margin: 0;
+/* clndr default css found here: https://github.com/kylestetz/CLNDR/tree/master/demo/css
+   Ensures the calendar is styled properly using the generated class names from clndr.js
+ */
+@font-face {
+  font-family: 'Droid Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Mono Regular'), local('DroidSansMono-Regular'), url(https://fonts.gstatic.com/s/droidsansmono/v11/6NUO8FuJNQ2MbkrZ5-J8lKFrp7pRef2u.ttf) format('truetype');
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.noselect {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
 }
 
-/* Formatting for the empty cells */
-.empty {
-    border: none;
+.left-align {
+  text-align: left;
 }
-
-a {
-    text-decoration: none; /* Removes the underlined from the hyperlink */
+.right-align {
+  text-align: right;
+}
+.calendar {
+  margin: 30px auto;
+  max-width: 600px;
+  font-family: 'Droid Sans Mono';
+  font-size: 14px;
+}
+.calendar .clndr .clndr-controls {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.calendar .clndr .clndr-controls .month {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.calendar .clndr .clndr-controls .clndr-control-button {
+  float: left;
+  width: 33%;
+}
+.calendar .clndr .clndr-controls .clndr-control-button.rightalign {
+  text-align: right;
+  width: 34%;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+  background: #ddd;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
+  opacity: 0.5;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
+  background: none;
+  cursor: default;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+  background: #ddd;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
+  opacity: 0.5;
+}
+.calendar .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
+  background: none;
+  cursor: default;
+}
+.calendar .clndr .clndr-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.calendar .clndr .clndr-table .header-days {
+  height: 30px;
+  font-size: 10px;
+  background: #01470b;
+}
+.calendar .clndr .clndr-table .header-days .header-day {
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  color: #fff;
+}
+.calendar .clndr .clndr-table .header-days .header-day:last-child {
+  border-right: 1px solid #000;
+}
+.calendar .clndr .clndr-table tr {
+  height: 85px;
+}
+.calendar .clndr .clndr-table tr td {
+  vertical-align: top;
+}
+.calendar .clndr .clndr-table tr .day {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  width: 100%;
+  height: inherit;
+}
+.calendar .clndr .clndr-table tr .day:hover {
+  background: #eee;
+}
+.calendar .clndr .clndr-table tr .day.today,
+.calendar .clndr .clndr-table tr .day.my-today {
+  background: #155609;
+}
+.calendar .clndr .clndr-table tr .day.today:hover,
+.calendar .clndr .clndr-table tr .day.my-today:hover {
+  background: #155609;
+}
+.calendar .clndr .clndr-table tr .day.today.event,
+.calendar .clndr .clndr-table tr .day.my-today.event {
+  background: #a7dbc1;
+}
+.calendar .clndr .clndr-table tr .day.event,
+.calendar .clndr .clndr-table tr .day.my-event {
+  background: #B4E09F;
+}
+.calendar .clndr .clndr-table tr .day.event:hover,
+.calendar .clndr .clndr-table tr .day.my-event:hover {
+  background: #96d478;
+}
+.calendar .clndr .clndr-table tr .day.inactive,
+.calendar .clndr .clndr-table tr .day.my-inactive {
+  background: #ddd;
+}
+.calendar .clndr .clndr-table tr .day:last-child {
+  border-right: 1px solid #000;
+}
+.calendar .clndr .clndr-table tr .day .day-contents {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 12px;
+  text-align: right;
+}
+.calendar .clndr .clndr-table tr .empty,
+.calendar .clndr .clndr-table tr .adjacent-month,
+.calendar .clndr .clndr-table tr .my-empty,
+.calendar .clndr .clndr-table tr .my-adjacent-month {
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+  width: 100%;
+  height: inherit;
+  background: #eee;
+}
+.calendar .clndr .clndr-table tr .empty:hover,
+.calendar .clndr .clndr-table tr .adjacent-month:hover,
+.calendar .clndr .clndr-table tr .my-empty:hover,
+.calendar .clndr .clndr-table tr .my-adjacent-month:hover {
+  background: #ddd;
+}
+.calendar .clndr .clndr-table tr .empty:last-child,
+.calendar .clndr .clndr-table tr .adjacent-month:last-child,
+.calendar .clndr .clndr-table tr .my-empty:last-child,
+.calendar .clndr .clndr-table tr .my-adjacent-month:last-child {
+  border-right: 1px solid #000;
+}
+.calendar .clndr .clndr-table tr:last-child .day,
+.calendar .clndr .clndr-table tr:last-child .my-day {
+  border-bottom: 1px solid #000;
+}
+.calendar .clndr .clndr-table tr:last-child .empty,
+.calendar .clndr .clndr-table tr:last-child .my-empty {
+  border-bottom: 1px solid #000;
 }

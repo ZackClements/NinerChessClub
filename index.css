@@ -39,6 +39,30 @@
     padding: 1%;
 }
 
+/* Dialog */
+
+/* Replaces default main body class */
+.dialog-main {
+    background-color: antiquewhite;
+    border: 5pt solid #c1af6c;
+    text-align: center
+}
+
+/* Replaces default title bar class */
+.dialog-titlebar {
+    background-color: #104c31;
+    text-align: center;
+}
+
+/* Replaces default close button class */
+.dialog-close {
+    float: right;
+    background-color: transparent;
+    border: none
+}
+
+
+
 
 
 

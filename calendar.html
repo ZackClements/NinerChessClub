@@ -5,11 +5,15 @@
     <title>Calendar</title>
     <link rel="stylesheet" type="text/css" href="baseTemplate.css">
     <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="clndr.js"></script>
+    <script src="calendar.js"></script>
 </head>
 <body>
 <header>
     <div id="container">
-
         <nav>
             <img id="clubname" src="images/NinerChessClubTrans.png" alt="Logo" width="120" height="120">
             <div id="button">
@@ -22,112 +26,14 @@
         </nav>
     </div>
 </header>
-    <main>
-        <div class="pageHeader">
-            <h1>March 2021 Calendar</h1>
+<main>
+    <div class="container">
+        <div class="calendar"></div>
+        <div id="events">
+            <p>Weekly Arena every Friday at 3 PM EST, check <a href="https://lichess.org/team/niner-chess-club">here</a> for more details</p>
         </div>
-        <table about="Calendar for the chess club">
-            <tr>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-            </tr>
-            <tr>
-                <th class="empty"></th>
-                <th>1st</th>
-                <th>2nd</th>
-                <th>3rd</th>
-                <th>4th</th>
-                <th>5th</th>
-                <th>6th</th>
-            </tr>
-            <tr>
-                <td class="empty"></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>5+0 Blitz Arena via <a href="https://lichess.org/tournament/3gPDHWWQ">Lichess</a></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>7th</th>
-                <th>8th</th>
-                <th>9th</th>
-                <th>10th</th>
-                <th>11th</th>
-                <th>12th</th>
-                <th>13th</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>2+1 Bullet Arena via <a href="https://lichess.org/tournament/QCVYQ4D9">Lichess</a></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>14th</th>
-                <th>15th</th>
-                <th>16th</th>
-                <th>17th</th>
-                <th>18th</th>
-                <th>19th</th>
-                <th>20th</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>12+0 Rapid Swiss via <a href="#">Lichess</a></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>21st</th>
-                <th>22nd</th>
-                <th>23rd</th>
-                <th>24th</th>
-                <th>25th</th>
-                <th>26th</th>
-                <th>27th</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1/2+0 Bullet Arena via <a href="#">Lichess</a></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th>28th</th>
-                <th>29th</th>
-                <th>30th</th>
-                <th>31st</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            <tr>
-                <td></td>
-                <td>3+2 Blitz Arena via <a href="#">Chess.com</a></td>
-                <td></td>
-                <td></td>
-                <td class="empty"></td>
-                <td class="empty"></td>
-                <td class="empty"></td>
-            </tr>
-        </table>
-    </main>
+    </div>
+</main>
 <footer>
     <div id="footerValidation">
         <a href="https://validator.w3.org/">HTML validation</a> |
